@@ -75,8 +75,27 @@ console.log(lastName);
 
 // print all the elements of the array in the console (use a "for" loop).
 
-for (let i = 0; i = classArray; i++) {
-    console.log(i);
+for (let i = 0; i < classArray.length; i++) {
+    console.log(classArray[i]);
 }
 
+
+/* Looping over an Array
+EXERCISE 7
+Create an array with all the ages of the students in your class. 
+Iterate the array using a while loop, and then print every age in the console. 
+Add a conditional inside the while loop to only print even numbers. */
+console.log('While')
+const classAges = [26, 31, 38, 20, 36, 37, 32];
+
+let i = 0;
+while (i < classAges.length) {
+    console.log(classAges[i]);
+    i = i + 1;;
+}
+
+console.log('For Each')
+classAges.forEach(age => {
+    console.log(age);
+});
 
